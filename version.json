@@ -1,6 +1,6 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0",
-  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.0/NewMedicine-debug.apk",
-  "notes": "v1.0 — New Medicine: 4 drops x 3 sessions, 10-min gap"
+  "versionCode": 2,
+  "versionName": "1.1",
+  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.1/NewMedicine-debug.apk",
+  "notes": "v1.1 — background reminder fix"
 }
