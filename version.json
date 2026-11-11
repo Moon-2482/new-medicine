@@ -1,6 +1,6 @@
 {
-  "versionCode": 2,
-  "versionName": "1.1",
-  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.1/NewMedicine-debug.apk",
-  "notes": "v1.1 — background reminder fix"
+  "versionCode": 3,
+  "versionName": "1.2",
+  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.2/NewMedicine-debug.apk",
+  "notes": "v1.2 — evening premature start fix"
 }
