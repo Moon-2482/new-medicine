@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:buttonStyle">@style/Widget.Drops.Button</item>
+    </style>
+
+    <!-- Default button: white with teal outline (rounded via drawable). -->
+    <style name="Widget.Drops.Button" parent="android:Widget.Material.Button">
+        <item name="android:background">@drawable/btn_secondary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- v2.3: dialog theme for the snooze duration chooser — same palette
+         and button style as the app, presented as a floating dialog. -->
+    <style name="SnoozeDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:buttonStyle">@style/Widget.Drops.Button</item>
+    </style>
+
+    <style name="Widget.Drops.Button.Primary" parent="Widget.Drops.Button">
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Drops.Button.Danger" parent="Widget.Drops.Button">
+        <item name="android:background">@drawable/btn_danger</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Rounded-square background -->
+    <path
+        android:fillColor="#5B2E91"
+        android:pathData="M24,24h60a12,12 0 0 1 12,12v60a12,12 0 0 1 -12,12H24a12,12 0 0 1 -12,-12V36a12,12 0 0 1 12,-12z" />
+    <!-- Droplet -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,26c0,0 -17,20 -17,32a17,17 0 0 0 34,0c0,-12 -17,-32 -17,-32z" />
+    <!-- Check mark inside the droplet -->
+    <path
+        android:fillColor="#5B2E91"
+        android:pathData="M47,58l5,5 9,-11 4,4 -13,15 -9,-9z" />
+</vector>

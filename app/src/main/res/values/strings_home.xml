@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- v2.0 home UI strings. Kept separate from strings.xml (owned by the
+     engine track) — the fragment reuses existing strings where they fit. -->
+<resources>
+    <!-- hero card -->
+    <string name="hero_drop_of">DROP %1$d OF %2$d</string>
+    <string name="hero_no_drop">—</string>
+    <string name="due_now">Due now</string>
+    <string name="overdue_by_min">OVERDUE by %1$d min</string>
+    <string name="today_timeline">TODAY TIMELINE</string>
+    <string name="all_done_today">All done for today</string>
+    <string name="waiting_session">%1$s — waiting</string>
+
+    <!-- hero actions -->
+    <string name="skip">Skip</string>
+    <string name="hero_taken_next">Taken ✓ — next drop at %1$s</string>
+    <string name="hero_taken_done">Taken ✓ — session complete</string>
+    <string name="skip_toast_skipped">Skipped — next drop at %1$s</string>
+    <string name="skip_toast_complete">Skipped — session complete</string>
+
+    <!-- v2.3 snooze -->
+    <string name="snooze">Snooze</string>
+    <string name="snooze_title">Snooze — kitni der baad?</string>
+    <string name="snooze_10_min">10 minutes</string>
+    <string name="snooze_20_min">20 minutes</string>
+    <string name="snooze_30_min">30 minutes</string>
+    <string name="snooze_1_hour">1 ghanta</string>
+    <string name="snoozed_toast">Snoozed — reminder %1$s par</string>
+</resources>

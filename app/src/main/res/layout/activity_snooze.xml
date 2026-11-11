@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- v2.3: snooze duration chooser. Four big preset buttons — the user
+     picks how long the reminder sleeps; no free-form entry. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/snooze_title"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_snooze_dose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_snooze_10"
+        style="@style/Widget.Drops.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="56dp"
+        android:text="@string/snooze_10_min"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_snooze_20"
+        style="@style/Widget.Drops.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="56dp"
+        android:text="@string/snooze_20_min"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_snooze_30"
+        style="@style/Widget.Drops.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="56dp"
+        android:text="@string/snooze_30_min"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_snooze_60"
+        style="@style/Widget.Drops.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="56dp"
+        android:text="@string/snooze_1_hour"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_snooze_cancel"
+        style="@style/Widget.Drops.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/cancel"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moon.newmedicine">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Usage access for morning wake detection: the app reads when the phone
+         was last used (stays on the device, never sent anywhere). This is a
+         special access permission granted in system Settings, not at runtime;
+         without it the app falls back to a single prompt at the window start. -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <!-- INTERNET is used ONLY for the in-app update check + update APK
+         download (both user-visible, both silent on failure). The app stays
+         fully usable offline — every reminder, dose record and setting works
+         in airplane mode. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Needed to launch the package installer for self-updates. -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- v2.1: dose reminders ring like a real alarm (looping sound until
+         the user stops it) from a foreground service. Both are NORMAL,
+         install-time permissions — no runtime prompt. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <application
+        android:name=".DropsApp"
+        android:label="New Medicine"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- v2.3: snooze duration chooser (dialog-themed). Opened by the
+             reminder's Snooze action and the in-app Snooze buttons with a
+             doseId extra. Never exported. -->
+        <activity
+            android:name=".ui.SnoozeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/SnoozeDialogTheme" />
+
+        <receiver
+            android:name=".alarm.AlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.moon.newmedicine.ALARM" />
+            </intent-filter>
+        </receiver>
+
+        <!-- v2.1: rings the dose reminder like an alarm (looping selected
+             sound on the ALARM stream) until the user answers, opens the
+             app, dismisses it, or 2 minutes pass. Never exported. -->
+        <service
+            android:name=".alarm.ReminderAlarmService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <receiver
+            android:name=".alarm.DoseActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.moon.newmedicine.ACTION_YES" />
+                <action android:name="com.moon.newmedicine.ACTION_NO" />
+                <action android:name="com.moon.newmedicine.ACTION_SKIP" />
+                <action android:name="com.moon.newmedicine.ACTION_SNOOZE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".alarm.SessionStartReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.moon.newmedicine.SESSION_START" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".alarm.WakeCheckReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.moon.newmedicine.WAKE_CHECK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".alarm.WakeActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.moon.newmedicine.WAKE_START" />
+                <action android:name="com.moon.newmedicine.WAKE_SNOOZE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".alarm.BootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".update.UpdateDownloadReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".update.ApkFileProvider"
+            android:authorities="com.moon.newmedicine.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+    </application>
+</manifest>

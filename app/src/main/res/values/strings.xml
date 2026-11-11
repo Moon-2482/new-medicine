@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">New Medicine</string>
+
+    <string name="disclaimer">Times are your settings, not medical advice — always follow your doctor\'s prescription.</string>
+
+    <!-- bottom nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_dose">Dose</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- permission banners -->
+    <string name="banner_notif">Notifications are off — reminders won\'t appear.</string>
+    <string name="banner_notif_action">Enable</string>
+    <string name="banner_alarm">Exact alarms not allowed — dose reminders AND the morning wake-up notification will NOT work.</string>
+    <string name="banner_alarm_action">Allow</string>
+
+    <!-- main -->
+    <string name="start_morning">Start Morning Session</string>
+    <string name="start_afternoon">Start Afternoon Session</string>
+    <string name="start_evening">Start Evening Session</string>
+    <string name="morning_done">Morning session done</string>
+    <string name="afternoon_done">Afternoon session done</string>
+    <string name="evening_done">Evening session done</string>
+    <string name="morning_active">Morning session running</string>
+    <string name="afternoon_active">Afternoon session running</string>
+    <string name="evening_active">Evening session running</string>
+    <string name="wake_banner">Good morning — ready to start your drops? Tap Start below.</string>
+    <string name="session_morning">Morning</string>
+    <string name="session_afternoon">Afternoon</string>
+    <string name="session_evening">Evening</string>
+    <string name="no_active_session">No active session</string>
+    <string name="no_upcoming_drops">No upcoming drops</string>
+    <string name="not_started_yet">Not started yet</string>
+    <string name="overdue">OVERDUE</string>
+    <string name="morning_started">Morning session started</string>
+    <string name="morning_already_active">Morning session already active</string>
+    <!-- v1.13: single-active-session invariant — names the blocking session. -->
+    <string name="session_blocked_by_active">%1$s session abhi chal raha hai — pehle usay mukammal karein.</string>
+    <string name="session_will_start_after">Session will start after the current one finishes.</string>
+    <string name="cannot_start_session">Cannot start session</string>
+    <string name="ok">OK</string>
+
+    <!-- dose -->
+    <string name="yes_taken">YES — Taken</string>
+    <string name="no_not_yet">NO — Not Yet</string>
+    <string name="special_drop">SPECIAL DROP</string>
+    <string name="dose_not_found">Dose not found</string>
+    <string name="already_recorded">Already recorded</string>
+    <string name="not_due_yet">Abhi waqt nahi hua</string>
+    <string name="not_due_hint">%1$s mein due hai — button waqt par khulenge</string>
+    <string name="no_drops_recorded">No drops recorded yet</string>
+
+    <!-- settings -->
+    <string name="settings_title_schedule">Schedule</string>
+    <string name="settings_title_special">Special drop</string>
+    <string name="settings_title_auto">Auto-start</string>
+    <string name="settings_title_wake">Morning wake detection</string>
+    <string name="usage_access_settings">Usage access settings</string>
+    <string name="usage_access_granted">Usage access: granted — wake detection is automatic</string>
+    <string name="usage_access_denied">Usage access: not granted — wake prompt falls back to once at window start</string>
+    <string name="usage_access_explain">Allow New Medicine to see when the phone was last used, so it can remind you automatically in the morning. This never leaves your phone.</string>
+    <string name="settings_title_alerts">Alerts</string>
+    <string name="settings_title_backup">Backup</string>
+    <string name="settings_title_permissions">Permissions</string>
+    <string name="export_backup">Export backup</string>
+    <string name="import_backup">Import backup</string>    <string name="clear_history">Clear history</string>
+    <string name="reset_settings">Reset all settings</string>
+    <string name="notif_settings">Notification settings</string>
+    <string name="alarm_settings">Alarm settings</string>
+    <string name="settings_title_updates">App updates</string>
+    <string name="check_for_updates">Check for updates</string>
+    <string name="confirm_clear_history">Delete all dose history? This cannot be undone.</string>
+    <string name="confirm_reset_settings">Reset all settings to defaults?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="settings_reset">Settings reset to defaults</string>
+    <string name="backup_exported">Backup exported</string>
+    <string name="export_failed">Export failed</string>
+    <string name="import_failed_title">Import failed</string>
+    <string name="no_history">No history yet.</string>
+    <string name="stop_session">Session rok dein</string>
+    <string name="confirm_stop_session_title">Session rok dein?</string>
+    <string name="confirm_stop_session">Pending reminders band ho jayenge. Jo drops le liye hain woh history mein rahenge.</string>
+    <string name="stop">Rok dein</string>
+    <string name="keep">Rehne dein</string>
+    <string name="session_stopped">Session rok di gayi</string>
+    <string name="session_already_stopped">Session pehle hi band hai</string>
+</resources>
