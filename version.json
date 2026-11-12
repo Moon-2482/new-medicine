@@ -1,6 +1,6 @@
 {
-  "versionCode": 5,
-  "versionName": "1.4",
-  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.4/NewMedicine-debug.apk",
-  "notes": "v1.4 — foreground ring plays the chosen sound"
+  "versionCode": 6,
+  "versionName": "1.5",
+  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.5/NewMedicine-debug.apk",
+  "notes": "v1.5 — one ring, one sound"
 }
