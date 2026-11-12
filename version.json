@@ -1,6 +1,6 @@
 {
-  "versionCode": 4,
-  "versionName": "1.3",
-  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.3/NewMedicine-debug.apk",
-  "notes": "v1.3 — missed auto-start recovery + dead button + custom sound"
+  "versionCode": 5,
+  "versionName": "1.4",
+  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.4/NewMedicine-debug.apk",
+  "notes": "v1.4 — foreground ring plays the chosen sound"
 }
