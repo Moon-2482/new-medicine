@@ -1,6 +1,6 @@
 {
-  "versionCode": 6,
-  "versionName": "1.5",
-  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.5/NewMedicine-debug.apk",
-  "notes": "v1.5 — one ring, one sound"
+  "versionCode": 7,
+  "versionName": "1.6",
+  "apkUrl": "https://github.com/Moon-2482/new-medicine/releases/download/v1.6/NewMedicine-debug.apk",
+  "notes": "v1.6 — missed-ring recovery + wake toggle + battery route"
 }
